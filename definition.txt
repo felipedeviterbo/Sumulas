@@ -1,0 +1,9 @@
+CRUD - Campeonatos 
+
+CRUD - Equipe
+  - Somente editar, só deixar inserir se não houver cadastrado ainda
+CRUD - Jogadores
+  - Jogadores equipe principal
+CRUD - Partida
+  - Inserção preencher informações da Partida
+  - Editar (deve editar tudo, mas o principal edição é atualizar gols/atualizar cartoes)
