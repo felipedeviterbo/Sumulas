@@ -7,17 +7,19 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "sumulas.api.domain/1.0.0": {
+      "sumulas.api.infra/1.0.0": {
         "dependencies": {
           "FluentValidation": "8.1.3",
           "MongoDB.Driver": "2.8.0",
           "NETStandard.Library": "2.0.3",
           "Swagger.Net.UI": "1.1.0",
           "Swashbuckle.AspNetCore": "4.0.1",
-          "Swashbuckle.Core.Extension": "1.0.2"
+          "Swashbuckle.Core.Extension": "1.0.2",
+          "sumulas.api.application": "1.0.0",
+          "sumulas.api.domain": "1.0.0"
         },
         "runtime": {
-          "sumulas.api.domain.dll": {}
+          "sumulas.api.infra.dll": {}
         }
       },
       "DnsClient/1.2.0": {
@@ -1744,11 +1746,36 @@
             "fileVersion": "1.5.1.0"
           }
         }
+      },
+      "sumulas.api.application/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "8.1.3",
+          "MongoDB.Driver": "2.8.0",
+          "Swagger.Net.UI": "1.1.0",
+          "Swashbuckle.AspNetCore": "4.0.1",
+          "Swashbuckle.Core.Extension": "1.0.2",
+          "sumulas.api.domain": "1.0.0"
+        },
+        "runtime": {
+          "sumulas.api.application.dll": {}
+        }
+      },
+      "sumulas.api.domain/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "8.1.3",
+          "MongoDB.Driver": "2.8.0",
+          "Swagger.Net.UI": "1.1.0",
+          "Swashbuckle.AspNetCore": "4.0.1",
+          "Swashbuckle.Core.Extension": "1.0.2"
+        },
+        "runtime": {
+          "sumulas.api.domain.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "sumulas.api.domain/1.0.0": {
+    "sumulas.api.infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2774,6 +2801,16 @@
       "sha512": "sha512-zbGGwvL/bwlNL8gAyDKVjYLNGz6NnYnjLV7FOHaXUXssgtSyidczl4gnbZ34bvFxAcq53/4WDc+HEfRLkMKIlg==",
       "path": "webactivator/1.5.1",
       "hashPath": "webactivator.1.5.1.nupkg.sha512"
+    },
+    "sumulas.api.application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sumulas.api.domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

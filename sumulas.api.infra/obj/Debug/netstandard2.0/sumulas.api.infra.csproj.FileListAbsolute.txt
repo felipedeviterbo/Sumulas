@@ -1,0 +1,14 @@
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.infra.deps.json
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.infra.dll
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.infra.pdb
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.application.dll
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.domain.dll
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.application.pdb
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\bin\Debug\netstandard2.0\sumulas.api.domain.pdb
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.csprojAssemblyReference.cache
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.csproj.CoreCompileInputs.cache
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.AssemblyInfoInputs.cache
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.AssemblyInfo.cs
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.csproj.CopyComplete
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.dll
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.infra\obj\Debug\netstandard2.0\sumulas.api.infra.pdb
