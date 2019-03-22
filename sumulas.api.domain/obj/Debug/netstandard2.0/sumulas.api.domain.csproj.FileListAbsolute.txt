@@ -1,0 +1,9 @@
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\bin\Debug\netstandard2.0\sumulas.api.domain.deps.json
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\bin\Debug\netstandard2.0\sumulas.api.domain.dll
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\bin\Debug\netstandard2.0\sumulas.api.domain.pdb
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\obj\Debug\netstandard2.0\sumulas.api.domain.csproj.CoreCompileInputs.cache
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\obj\Debug\netstandard2.0\sumulas.api.domain.AssemblyInfoInputs.cache
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\obj\Debug\netstandard2.0\sumulas.api.domain.AssemblyInfo.cs
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\obj\Debug\netstandard2.0\sumulas.api.domain.dll
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\obj\Debug\netstandard2.0\sumulas.api.domain.pdb
+C:\Users\Zupper\source\repos\sumulas-api\sumulas.api.domain\obj\Debug\netstandard2.0\sumulas.api.domain.csprojAssemblyReference.cache
