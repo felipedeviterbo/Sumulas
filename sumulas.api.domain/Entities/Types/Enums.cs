@@ -19,3 +19,22 @@ public enum FasesCampeonato {
         Hexagonal = 8
         
     }
+
+public enum FuncaoArbitro {
+    //Para descricao usar Nameof
+    Principal = 1,
+    Auxiliar = 2,
+    Assistente = 3,
+    Mesario = 4,
+}
+
+public enum LevelException{
+   // [XmlEnumAttribute("Hexagonal")]
+    BusinessRule = 1,
+    
+    SystemRule = 2,
+    
+    InfraRule = 3,
+    
+    ValidationRule = 4
+}
