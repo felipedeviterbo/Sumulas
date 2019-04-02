@@ -1,4 +1,4 @@
-﻿using sumulas.api.domain.Entities.Basicos;
+﻿using sumulas.api.domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +10,7 @@ namespace sumulas.api.application.ViewModel
         public string Id { get; set; }
         public string Name { get; set; }
         public int Year { get; set; }
-        public List<FasesCampeonato> Fases { get; set; }
+        //public List<FasesCampeonato> Fases { get; set; }
 
         public static CampeonatoModel From(Campeonatos item)
         {
@@ -18,7 +18,7 @@ namespace sumulas.api.application.ViewModel
                 Id = item.Id,
                 Name = item.Name,
                 Year = item.Year,
-                Fases = item.Fases
+                //Fases = item.Fases
             }; 
         }
     }

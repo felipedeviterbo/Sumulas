@@ -11,7 +11,7 @@ namespace sumulas.api.application.Validations
         {
             RuleFor(x => x.Id).NotEmpty().WithMessage("O campo Id deve ser informado");
             RuleFor(x => x.Name).NotEmpty().WithMessage("O campo deve ser informado");
-            RuleFor(x => x.Year).LessThan(y => DateTime.Now.Date.AddYears(-100).Year).WithMessage("Ano inválido");
+            RuleFor(x => x.Year).GreaterThan(y => DateTime.Now.Date.AddYears(-100).Year).WithMessage("Ano inválido");
             //RuleFor(x => x.DataNascimento.Date).LessThan(p => DateTime.Now.Date.AddYears(-17)).WithMessage("Data de Nascimento menor que 18 anos");
             
         }

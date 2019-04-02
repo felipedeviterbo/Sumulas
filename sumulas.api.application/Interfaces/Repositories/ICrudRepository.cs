@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace sumulas.api.application.Interfaces.Repositories
 {
     public interface ICrudRepository<T>
     {
-        T Insert(T item);
-        bool Update(T item);
-        T GetById(string Id);
+        Task<T> Insert(T item);
+        Task<bool> Update(T item);
+        Task<T> GetById(string Id);
     }
 }

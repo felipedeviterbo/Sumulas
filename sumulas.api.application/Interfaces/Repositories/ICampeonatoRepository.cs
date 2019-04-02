@@ -1,7 +1,8 @@
-﻿using sumulas.api.domain.Entities.Basicos;
+﻿using sumulas.api.domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace sumulas.api.application.Interfaces.Repositories
 {
@@ -9,6 +10,9 @@ namespace sumulas.api.application.Interfaces.Repositories
     {
         IEnumerable<Campeonatos> ListByYear(int Year);
         IEnumerable<Campeonatos> ListByPeriod(int YearIni, int YearEnd);
-       
+
+        Task<Campeonatos> GetByModel(string Nome, int year);
+
+
     }
 }

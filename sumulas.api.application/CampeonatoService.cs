@@ -7,6 +7,8 @@ using System.Text;
 using System.Linq;
 using sumulas.api.application.Validations;
 using sumulas.api.domain.Exceptions;
+using sumulas.api.domain.Entities;
+using System.Threading.Tasks;
 
 namespace sumulas.api.application
 {
@@ -22,12 +24,21 @@ namespace sumulas.api.application
         public IEnumerable<CampeonatoModel> Get()
         {
             var champs = _campeonatoRepository.Get();
-            return champs.Select(s => CampeonatoModel.From(s));
+            return champs.Result.Select(s => CampeonatoModel.From(s));
         }
 
-        public CampeonatoModel Insert(CampeonatoModel campeonato)
+        public async Task<CampeonatoModel> Insert(CampeonatoModel model)
         {
-            var validacao = new CampeonatoValidation().Validate(campeonato);
+            if (string.IsNullOrEmpty(model.Id))
+            {
+                model.Id = Guid.NewGuid().ToString();
+            } else
+            {
+                var campeonato = _campeonatoRepository.GetById(model.Id);
+                if (campeonato.Result != null && campeonato.Result.Id.Equals(model.Id))
+                    throw new BusinessRuleViolatedException($"Já existe um campeonato com o Id informado.");
+            }
+            var validacao = new CampeonatoValidation().Validate(model);
             string mensagemErro = string.Empty;
             string separador = string.Empty;
             if (!validacao.IsValid)
@@ -39,10 +50,21 @@ namespace sumulas.api.application
                 //validacao.Errors.Select(a => $"{a.ErrorCode} >> {a.ErrorMessage}");
                 throw new BusinessRuleViolatedException($"Campeonato com informações inválidas: {mensagemErro} ");
             }
-            return campeonato;
+            // verifica já existe campeonato
+            var validExist = _campeonatoRepository.GetByModel(model.Name, model.Year);
+            if (validExist.Result != null && !string.IsNullOrEmpty(validExist.Result.Id)) ;
+            // insere campeonato
+            var newCampeonato = new Campeonatos {
+                Id = model.Id,
+                Name = model.Name,
+                Year = model.Year
+            };
+            //newCampeonato.FinalClassification = campeonato
+            await _campeonatoRepository.Insert(newCampeonato);
+            return model;
         }
 
-        public CampeonatoModel Update(CampeonatoModel campeonato) { throw new NotImplementedException();}
-        public bool Delete(CampeonatoModel campeonato) { throw new NotImplementedException();}
+        public Task<CampeonatoModel> Update(CampeonatoModel campeonato) { throw new NotImplementedException();}
+        public Task<bool> Delete(CampeonatoModel campeonato) { throw new NotImplementedException();}
     }
 }
